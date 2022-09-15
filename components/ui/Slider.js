@@ -5,20 +5,20 @@ import {
   EffectFade,
   Navigation,
   Pagination,
-} from "swiper";
+} from "swiper"
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react"
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
 
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
-} from "react-icons/md";
-import Image from "next/image";
+} from "react-icons/md"
+import Image from "next/image"
 
 export default ({ data }) => {
   return (
@@ -41,8 +41,8 @@ export default ({ data }) => {
           prevEl: ".swiper-prev",
         }}
         pagination={{
-          el: ".swiper-pagination  ",
-          bulletActiveClass: ".swiper-pagination-bullet",
+          el: ".swiper-pagination",
+          clickable: true,
         }}
         autoplay={{
           delay: 3500,
@@ -53,7 +53,13 @@ export default ({ data }) => {
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
-            <Image src={item.img} layout="fill" objectFit="contain" alt="" />
+            <Image
+              src={item.img}
+              layout="fill"
+              objectFit="contain"
+              alt={item.id}
+              priority={index}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -71,9 +77,7 @@ export default ({ data }) => {
         />
       </div>
 
-      <div className="swiper-pagination  absolute bottom-4 drop-shadow-lg p-1 flex  items-center justify-center rounded-lg left-1/2 z-10 cursor-pointer bg-white gap-3 "></div>
-
-      <div className="swiper-pagination-bullet active:!bg-[#1f58ac]"></div>
+      <div className="swiper-pagination absolute bottom-3 left-1/2 !w-auto drop-shadow-lg p-1 flex  items-center content-center justify-center rounded-lg z-10 cursor-pointer bg-white gap-3 "></div>
     </div>
-  );
-};
+  )
+}
