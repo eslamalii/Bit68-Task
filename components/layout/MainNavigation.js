@@ -13,9 +13,11 @@ const MainNavigation = () => {
           <Link href="/">
             <Image
               src="/Group-2925.svg"
+              priority
               width={70}
               height={70}
               layout="fixed"
+              alt=""
             />
           </Link>
         </div>
@@ -41,11 +43,13 @@ const MainNavigation = () => {
             src="/vuesax-linear-search-normal.svg"
             height={24}
             width={24}
+            alt=""
             layout="fixed"
           />
           <Image
             src="/vuesax-linear-profile.svg"
             height={24}
+            alt=""
             width={24}
             layout="fixed"
           />
@@ -53,6 +57,7 @@ const MainNavigation = () => {
             src="/vuesax-linear-bag-2.svg"
             height={24}
             width={24}
+            alt=""
             layout="fixed"
           />
         </div>
@@ -75,6 +80,7 @@ const MainNavigation = () => {
             <Image
               src="/vuesax-linear-search-normal.svg"
               height={24}
+              alt=""
               width={24}
               layout="fixed"
             />
@@ -82,6 +88,7 @@ const MainNavigation = () => {
               src="/vuesax-linear-profile.svg"
               height={24}
               width={24}
+              alt=""
               layout="fixed"
             />
             <Image
@@ -89,6 +96,7 @@ const MainNavigation = () => {
               height={24}
               width={24}
               layout="fixed"
+              alt=""
             />
           </div>
 
