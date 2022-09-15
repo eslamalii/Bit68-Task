@@ -128,14 +128,14 @@ const ProductInfo = ({ details }) => {
           <div className="border-y-[0.5px] border-[#D8D8D8] my-4"></div>
 
           <div className="flex gap-2">
-            <Image src={"/car.png"} width={20} height={20} />
+            <Image src={"/car.png"} width={20} height={20} alt="" />
             <p className=" text-[#6F6F6F] text-sm">
               Free shipping, arrives by Tue, Nov 23
             </p>
           </div>
 
           <div className="flex gap-2">
-            <Image src={"/convert.png"} width={20} height={20} />
+            <Image src={"/convert.png"} width={20} height={20} alt="" />
             <p className=" text-[#6F6F6F] text-sm">
               Free 10-day return window starts Dec 26th Details
             </p>
