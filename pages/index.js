@@ -1,3 +1,4 @@
+import Subscribe from "../components/layout/Subscribe"
 import Product from "../components/products/product"
 import Slider from "../components/ui/Slider"
 import { getProducts, getSliders } from "../helpers/api-util"
@@ -7,6 +8,7 @@ export default function Home({ slides, products }) {
     <>
       <Slider data={slides} />
       <Product products={products} />
+      <Subscribe />
     </>
   )
 }

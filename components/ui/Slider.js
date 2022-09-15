@@ -20,7 +20,7 @@ import {
 } from "react-icons/md"
 import Image from "next/image"
 
-export default ({ data }) => {
+const Slider = ({ data }) => {
   return (
     <div className="relative">
       <Swiper
@@ -77,7 +77,9 @@ export default ({ data }) => {
         />
       </div>
 
-      <div className="swiper-pagination absolute bottom-3 left-1/2 !w-auto drop-shadow-lg p-1 flex  items-center content-center justify-center rounded-lg z-10 cursor-pointer bg-white gap-3 "></div>
+      <div className="swiper-pagination !left-1/2 transform !-translate-x-1/2 absolute bottom-3 !w-auto drop-shadow-lg p-1 flex items-center justify-center rounded-lg z-10 cursor-pointer bg-white gap-3 "></div>
     </div>
   )
 }
+
+export default Slider

@@ -1,17 +1,21 @@
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 const Card = ({ product }) => {
   return (
     <div className="w-full max-w-sm bg-white border flex flex-col">
-      <div className="p-12">
-        <Image
-          src={product.img[0]}
-          width={220}
-          height={220}
-          objectFit="contain"
-          priority={product.id}
-        />
+      <div className="p-12 cursor-pointer">
+        <Link href={`/${product.id}`}>
+          <Image
+            src={product.img[0]}
+            width={220}
+            height={220}
+            objectFit="contain"
+            alt=""
+            priority={product.id}
+          />
+        </Link>
       </div>
 
       <div className="mx-8 flex flex-col justify-between h-32 pb-2 ">

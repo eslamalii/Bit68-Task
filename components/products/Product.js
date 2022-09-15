@@ -15,7 +15,10 @@ import {
 
 const Product = ({ products }) => {
   return (
-    <div>
+    <>
+      <p className="w-full pt-4 text-center text-2xl font-bold">
+        Explore Products
+      </p>
       <div className="p-12 md:block relative hidden  ">
         <Swiper
           slidesPerView={1}
@@ -59,7 +62,7 @@ const Product = ({ products }) => {
           />
         </div>
 
-        <div className="swiperP-pagination !w-auto absolute left-1/2 bottom-1 drop-shadow-lg p-1 flex items-center justify-center rounded-lg z-10 cursor-pointer bg-white gap-3 "></div>
+        <div className="swiperP-pagination !w-auto absolute !left-1/2 transform !-translate-x-1/2 bottom-1 drop-shadow-lg p-1 flex items-center justify-center rounded-lg z-10 cursor-pointer bg-white gap-3 "></div>
 
         <div className="swiperP-prev absolute right-2/3  !w-auto bottom-0 z-10 flex cursor-pointer items-center justify-center">
           <MdOutlineKeyboardArrowLeft
@@ -74,7 +77,7 @@ const Product = ({ products }) => {
           return <Card product={item} key={item.id} />
         })}
       </div>
-    </div>
+    </>
   )
 }
 
