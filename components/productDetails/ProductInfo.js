@@ -14,7 +14,12 @@ const ProductInfo = ({ details }) => {
           <span className=" uppercase text-sm text-[#888888]">
             {details.name}
           </span>
-          <Image src={"/vuesax-linear-heart.svg"} width={20} height={20} />
+          <Image
+            src={"/vuesax-linear-heart.svg"}
+            width={20}
+            height={20}
+            alt=""
+          />
         </div>
         <span className=" text-lg">{details.name}</span>
         <div className="flex items-center">
