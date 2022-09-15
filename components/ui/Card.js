@@ -15,10 +15,21 @@ const Card = ({ product }) => {
       </div>
 
       <div className="mx-8 flex flex-col justify-between h-32 pb-2 ">
-        <span className=" text-base pm-4">Apple 20W USB-C Power Adapter</span>
+        <span className=" text-base pm-4">{product.name}</span>
 
         <div className="flex flex-col">
-          <span className=" text-xl">${product.price}</span>
+          {product.priceAfterdiscount < product.price ? (
+            <div className="flex justify-between">
+              <span className=" text-red-500 text-xl">
+                ${product.priceAfterdiscount}
+              </span>
+              <span className=" line-through text-lg text-[#A7A9AC]">
+                ${product.price}
+              </span>
+            </div>
+          ) : (
+            <span className=" text-xl text-black">${product.price}</span>
+          )}
           {product.inStock > 0 ? (
             <span className=" text-sm text-[#36BA5C]">In Stock</span>
           ) : (
