@@ -5,10 +5,10 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { ImCross } from "react-icons/im"
 
 const MainNavigation = () => {
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
   return (
-    <header>
-      <nav className="bg-[#1C1C1C] sticky top-0 z-10 w-full h-24 flex py-4 px-10 text-white justify-between md:justify-evenly gap-14 text-base lg:text-lg   ">
+    <header className="sticky top-0 z-50">
+      <nav className="bg-[#1C1C1C] w-full h-24 flex py-4 px-10 text-white justify-between md:justify-evenly gap-14 text-base lg:text-lg   ">
         <div className="cursor-pointer ">
           <Link href="/">
             <Image
