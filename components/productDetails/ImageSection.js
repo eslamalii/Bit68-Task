@@ -15,7 +15,7 @@ const ImageSection = ({ images }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
   return (
-    <div className=" w-full lg:w-1/2 p-12">
+    <div className=" relative w-full lg:w-1/2 p-12">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -27,7 +27,7 @@ const ImageSection = ({ images }) => {
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="w-1/2 relative"
+        className="w-1/2 "
       >
         {images.map((img, index) => {
           return (
@@ -55,11 +55,11 @@ const ImageSection = ({ images }) => {
           slidesPerView={images.length}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className=" mt-3  relative"
+          className=" mt-3  "
         >
           {images.map((img, index) => {
             return (
-              <SwiperSlide key={index} className="flex !h-[150px] items-center">
+              <SwiperSlide key={index} className="  !h-[150px] items-center">
                 <div className="cursor-pointer ">
                   <Image
                     src={img}
