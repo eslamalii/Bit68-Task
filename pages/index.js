@@ -1,5 +1,5 @@
 import Subscribe from "../components/layout/Subscribe"
-import Product from "../components/products/product"
+import Products from "../components/products/Products"
 import Slider from "../components/ui/Slider"
 import { getProducts, getSliders } from "../helpers/api-util"
 
@@ -7,7 +7,7 @@ export default function Home({ slides, products }) {
   return (
     <>
       <Slider data={slides} />
-      <Product products={products} />
+      <Products products={products} />
       <Subscribe />
     </>
   )

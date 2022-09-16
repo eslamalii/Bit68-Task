@@ -13,7 +13,7 @@ import {
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md"
 
-const Product = ({ products }) => {
+const Products = ({ products }) => {
   return (
     <>
       <p className="w-full pt-4 text-center text-2xl font-bold">
@@ -81,4 +81,4 @@ const Product = ({ products }) => {
   )
 }
 
-export default Product
+export default Products
