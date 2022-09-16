@@ -2,7 +2,7 @@ import React from "react"
 import { Navigation, Scrollbar, Pagination } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 
-import Card from "../ui/card"
+import Card from "../ui/Card"
 
 import "swiper/css"
 import "swiper/css/navigation"
